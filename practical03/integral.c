@@ -1,33 +1,33 @@
 #include "math.h"
 #include "stdio.h"
 
-float f(float x){
+double f(double x){
 
 //    The integrand
-    return tanf(x);
+    return tan(x);
 }
 
 
 int main(void){
 
 //    the limits of integration
-    float a = 0;
-    float b = M_PI/3;
+    double a = 0;
+    double b = M_PI/3;
 
 //    The number steps taken in the integration
-    int N = 12;
+    double N = 12;
 
 //    The index of each step, to be incremented in the while loop
-    float i = 1;
+    int i = 1;
 
 //    step size
-    float dx = (b-a)/N;
+    double dx = (b-a)/N;
 
 //    The current value of x
-    float x;
+    double x;
 
 //    Where the answer will be stored, first and last values added first
-    float ans = f(a) + f(b);
+    double ans = f(a) + f(b);
 
 //    While loop to preform integration
     while(i<=N-1){
@@ -45,10 +45,10 @@ int main(void){
     ans *= (b-a)/(2*N);
 
 //    print results
-    printf("\nN = %d\na = %.3f\nb = %.3f\n", N, a, b);
+    printf("\nN = %d\na = %.3f\nb = %.3f\n", &N, &a, &b);
 
-    printf("\nThe computed answer to the integral is %.5f", ans);
-    printf("\nThe actual answer is %.5f\n", logf(2));
+    printf("\nThe computed answer to the integral is %.10f", ans);
+    printf("\nThe actual answer is %.10f\n", logf(2));
 
     return 0;
 }
