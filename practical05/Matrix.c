@@ -1,6 +1,8 @@
 /*
  * This program utilises Matrix_mult.h to preform a matrix multiplication on
- * two matrices A and B and stores the result in C*/
+ * two matrices A and B and stores the result in C
+ *
+ */
 
 //import files
 #include "stdio.h"
