@@ -1,4 +1,4 @@
-# Magic_square.c
+# Magic_square.h
 
 Determines whether a given matrix is 'magic', ie.) whether the diagonals columns and rows add up to the same value
 
