@@ -45,10 +45,10 @@ int main(void){
     ans *= (b-a)/(2*N);
 
 //    print results
-    printf("\nN = %d\na = %.3f\nb = %.3f\n", &N, &a, &b);
+    printf("\nN = %.0lf\na = %.3lf\nb = %.3lf\n", N, a, b);
 
-    printf("\nThe computed answer to the integral is %.10f", ans);
-    printf("\nThe actual answer is %.10f\n", logf(2));
+    printf("\nThe computed answer to the integral is %.10lf", ans);
+    printf("\nThe actual answer is %.10lf\n", logf(2));
 
     return 0;
 }
